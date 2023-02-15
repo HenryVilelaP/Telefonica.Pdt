@@ -1,0 +1,152 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E14905FD-70C7-4C86-BF5E-6CC66212643D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Telefonica.Pdt.Business</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Telefonica.Pdt.Business</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pdt_bitacoraBL.cs" />
+    <Compile Include="pdt_pedido_prd_docBL.cs" />
+    <Compile Include="pdt_sg_historia_cambio_passwordBL.cs" />
+    <Compile Include="pdt_sg_opcionBL.cs" />
+    <Compile Include="pdt_sg_opcion_accionBL.cs" />
+    <Compile Include="pdt_sg_opcion_perfilBL.cs" />
+    <Compile Include="pdt_sg_opcion_perfil_accionBL.cs" />
+    <Compile Include="pdt_sg_tip_opcionBL.cs" />
+    <Compile Include="pdt_tip_ope_comBL.cs" />
+    <Compile Include="pdt_accionBL.cs" />
+    <Compile Include="pdt_cotizacionBL.cs" />
+    <Compile Include="pdt_cupoBL.cs" />
+    <Compile Include="pdt_estadosBL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pdt_paqueteBL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pdt_perfilBL.cs" />
+    <Compile Include="pdt_tabla_tablasBL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pdt_pedidoBL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pdt_tr_origenesBL.cs" />
+    <Compile Include="pdt_turnoBL.cs" />
+    <Compile Include="pdt_ubigeoBL.cs" />
+    <Compile Include="pdt_usuarioBL.cs" />
+    <Compile Include="pdt_prd_servicioBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Telefonica.Pdt.Common\Telefonica.Pdt.Common.csproj">
+      <Project>{9C685153-7342-41FB-9464-472DB2B4A003}</Project>
+      <Name>Telefonica.Pdt.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telefonica.Pdt.Data\Telefonica.Pdt.Data.csproj">
+      <Project>{DC64DB92-5483-468D-9A99-A5C2080BF789}</Project>
+      <Name>Telefonica.Pdt.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telefonica.Pdt.Entities\Telefonica.Pdt.Entities.csproj">
+      <Project>{CFE1B462-A3BC-417E-8471-4B8EF8BC0C68}</Project>
+      <Name>Telefonica.Pdt.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
